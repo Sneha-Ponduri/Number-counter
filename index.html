@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color counter</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width:90%;
+            max-width:600px;
+            background-color: rgb(183, 155, 209);
+            justify-content: center;
+            align-items: center;
+            height:500px;
+            border-radius:2rem;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        h1{
+            
+            font-weight: 5rem;
+            font-size: 10rem;
+            color:white;
+            margin:0;
+        }
+        button{
+            background-color: white;
+            color:rgb(183, 155, 209);
+            border: none;
+            width:5rem;
+            height:3rem;
+            margin: 2rem;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="counter"><h1>0</h1></div>
+        <div class="buttons">
+        <button id="reset">Reset</button>
+        <button id="increase">Increase</button>
+        <button id="decrease">Decrease</button>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
